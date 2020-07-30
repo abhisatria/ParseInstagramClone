@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoIg"
+        android:layout_marginTop="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/instagram_sketched"
+        tools:srcCompat="@drawable/instagram_sketched"></ImageView>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_below="@id/logoIg"
+        android:layout_width="match_parent"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etUsername"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"></Button>
+    <TextView
+        android:id="@+id/tvAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Already have an account?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btSignUp"></TextView>
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login here"
+        android:layout_below="@id/tvAlready"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+</RelativeLayout>
